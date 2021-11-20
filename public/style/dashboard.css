@@ -37,9 +37,16 @@ header div {
 }
 
 header div img {
-  width: 3vw;
+  width: 3rem;
   margin-right: 20px;
   border-radius: 50%;
+}
+
+/* Body content */
+.body-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr 1fr;
 }
 
 /* Main */
@@ -83,11 +90,98 @@ header div img {
 
 .small-boxes div {
   background: #011640;
-  height: 100px;
-  width: 200px;
+  height: 150px;
+  width: 250px;
 
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: .5rem;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  height: 200px;
+  margin-top: 0px;
+  background: #193559;
+}
+
+footer nav {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .big-boxes div {
+    margin-bottom: -70px;
+    height: 200px;
+    width: 350px;
+  }
+
+  .small-boxes div {
+    height: 130px;
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .big-boxes div {
+    margin-bottom: -50px;
+    height: 150px;
+    width: 250px;
+  }
+
+  .small-boxes {
+    width: 55vw;
+    flex-wrap: wrap;
+  }
+
+  .small-boxes div {
+    margin: 0 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .big-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .big-boxes div:last-child {
+    margin-bottom: -100px;
+  }
+
+  .small-boxes div {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header div img {
+    margin: 0;
+  }
+
+  footer nav {
+    display: grid;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .big-boxes div {
+    margin-top: 70px;
+    height: 100px;
+    width: 200px;
+  }
 }
