@@ -5,10 +5,23 @@
 }
 
 body {
-  background: #65768C;
+  background: #BABDBF;
 }
 
-main div:first-child {
+/* Container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 9fr 1fr;
+}
+
+/* Main */
+Main h1 {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+main .my-photo{
   display: flex;
   justify-content: center;
 }

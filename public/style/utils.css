@@ -14,9 +14,9 @@
 
 /* Main */
 main {
-  height: 90vh;
-  width: 60vw;
+  height: max(90vh, 650px);
+  width: min(95vw, 900px);
   margin: auto;
 
-  background: orange;
+  background: #A1A4A6;
 }

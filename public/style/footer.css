@@ -1,11 +1,11 @@
 /* Footer */
 footer {
-  height: 10vh;
+  height: max(10vh, 70px);
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
 
-  background: #193559;
+  background: #F2F2F2;
 }
 
 footer div {
