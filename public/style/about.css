@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #65768C;
+}
+
+main div:first-child {
+  display: flex;
+  justify-content: center;
+}
+
+main div img {
+  margin: 1rem 0;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+main .my-info p {
+  text-align: center;
+  margin: 1rem 0;
+}

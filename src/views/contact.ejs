@@ -4,12 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/contact.css" />
+    <link rel="stylesheet" href="/style/footer.css" />
+    <link rel="stylesheet" href="/style/utils.css" />
     <title>Contact</title>
   </head>
   <body>
     <main>
-      <h1>Contact</h1>
-      <p><a href="/">Back</a></p>
+      <form method="post">
+        <label for="email">Your email</label> <br />
+        <input class="email" type="text" name="email" placeholder="Email" />
+        <br />
+        <label for="subject">Subject</label> <br />
+        <textarea
+          class="subject"
+          name="subject"
+          placeholder="Subject"
+        ></textarea>
+        <br />
+        <button type="submit" name="submit" class="button">Submit</button>
+      </form>
     </main>
+    <%- include('parts/footer') %>
   </body>
 </html>

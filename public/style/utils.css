@@ -1,0 +1,22 @@
+/* Button */
+.button {
+  padding: .2rem .5rem;
+  margin: auto;
+  background: #65768C;
+  border: none;
+  border-radius: .2rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Main */
+main {
+  height: 90vh;
+  width: 60vw;
+  margin: auto;
+
+  background: orange;
+}

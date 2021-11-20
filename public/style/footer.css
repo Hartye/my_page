@@ -1,0 +1,21 @@
+/* Footer */
+footer {
+  height: 10vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  background: #193559;
+}
+
+footer div {
+  margin: auto;
+}
+
+footer div img {
+  width: 3rem;
+}
+
+footer div p {
+  font-size: 1rem;
+}
