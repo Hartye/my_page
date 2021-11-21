@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/about.css" />
+    <link rel="stylesheet" href="/style/footer.css" />
+    <link rel="stylesheet" href="/style/utils.css" />
+    <link rel="stylesheet" href="/style/viewComments.css" />
+    <title>View Comments</title>
+  </head>
+  <body>
+    <section class="container">
+      <main>
+        <h1>FeedBack</h1>
+        <% comments.forEach(comment => { %>
+        <div>
+          <h2><%= comment.name %></h2>
+          <p><%= comment.content %></p>
+        </div>
+        <br />
+        <% }) %>
+      </main>
+      <%- include('parts/footer') %>
+    </section>
+  </body>
+</html>
