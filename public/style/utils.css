@@ -2,10 +2,10 @@
 .button {
   padding: .2rem .5rem;
   margin: auto;
-  background: #65768C;
+  background: #F2C335;
   border: none;
   border-radius: .2rem;
-  color: white;
+  color: #ffffff;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -18,5 +18,5 @@ main {
   width: min(95vw, 900px);
   margin: auto;
 
-  background: #A1A4A6;
+  background: #F27405;
 }

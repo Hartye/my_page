@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #BABDBF;
+  background: #F2C335;
 }
 
 /* Header */
@@ -14,7 +14,7 @@ header {
   display: grid;
   grid-template-columns: 10fr 1fr;
 
-  background: #A1A4A6;
+  background: #F27405;
   height: 60px;
 }
 
@@ -25,8 +25,13 @@ header nav {
 }
 
 header nav a {
-  padding: 0 20px;
+  margin-left: 20px;
+  padding: 10px 10px;
   text-decoration: none;
+}
+
+.nav-links a:hover {
+  background: #037F8C;
 }
 
 header div {
@@ -51,7 +56,7 @@ header div img {
 
 /* Main */
 .big-boxes {
-  background: #F2F2F2;
+  background: #F28705;
   height: 300px;
 
   margin: 0 10vw 0 10vw;
@@ -73,7 +78,11 @@ header div img {
   width: 430px;
   border-radius: .5rem;
 
-  background: #727273;
+  background: #037F8C;
+}
+
+.big-boxes div:hover {
+  background: #F2F2F2;
 }
 
 .big-boxes div a {
@@ -84,6 +93,11 @@ header div img {
 
 .big-boxes div a img {
   width: 95%;
+}
+
+.big-boxes div a img:hover {
+  transition: .5s;
+  opacity: .5;
 }
 
 .content {
@@ -100,7 +114,7 @@ header div img {
 }
 
 .small-boxes div {
-  background: #727273;
+  background: #037F8C;
   height: 150px;
   width: 250px;
 
@@ -108,6 +122,10 @@ header div img {
   align-items: center;
   justify-content: center;
   border-radius: .5rem;
+}
+
+.small-boxes div:hover{
+  background: #F2F2F2;
 }
 
 .small-boxes div a {
@@ -119,6 +137,11 @@ header div img {
 .small-boxes div a img {
   width: 95%;
   border-radius: .5rem;
+}
+
+.small-boxes div a img:hover {
+  transition: .5s;
+  opacity: .5;
 }
 
 /* Footer */
@@ -133,7 +156,7 @@ footer {
   justify-content: center;
   align-items: space-between;
 
-  background: #262626;
+  background: #037F8C;
 }
 
 footer nav {
