@@ -25,12 +25,15 @@ header nav {
 }
 
 header nav a {
+  transition: .5s;
   margin-left: 20px;
   padding: 10px 10px;
   text-decoration: none;
 }
 
 .nav-links a:hover {
+  transition: .5s;
+  transform: rotate(-10deg) translateY(10px);
   background: #037F8C;
 }
 
@@ -74,15 +77,7 @@ header div img {
 
   margin: auto;
   margin-bottom: -100px;
-  height: 250px;
-  width: 430px;
   border-radius: .5rem;
-
-  background: #037F8C;
-}
-
-.big-boxes div:hover {
-  background: #F2F2F2;
 }
 
 .big-boxes div a {
@@ -92,12 +87,16 @@ header div img {
 }
 
 .big-boxes div a img {
+  transition: .5s;
+  box-shadow: 0 0 0 .5rem #037F8C;
+  border-radius: .5rem;
   width: 95%;
 }
 
 .big-boxes div a img:hover {
   transition: .5s;
-  opacity: .5;
+  transform: translateY(10px);
+  box-shadow: 0 0 0 .5rem #F2F2F2;
 }
 
 .content {
@@ -114,7 +113,6 @@ header div img {
 }
 
 .small-boxes div {
-  background: #037F8C;
   height: 150px;
   width: 250px;
 
@@ -124,10 +122,6 @@ header div img {
   border-radius: .5rem;
 }
 
-.small-boxes div:hover{
-  background: #F2F2F2;
-}
-
 .small-boxes div a {
   display: flex;
   justify-content: center;
@@ -135,13 +129,16 @@ header div img {
 }
 
 .small-boxes div a img {
-  width: 95%;
+  transition: .5s;
+  box-shadow: 0 0 0 .5rem #037F8C;
   border-radius: .5rem;
+  width: 95%;
 }
 
 .small-boxes div a img:hover {
   transition: .5s;
-  opacity: .5;
+  transform: translateY(10px);
+  box-shadow: 0 0 0 .5rem #F2F2F2;
 }
 
 /* Footer */
@@ -172,6 +169,37 @@ footer nav a {
 footer div {
   margin-top: 20px;
   text-align: center;
+  cursor: default;
+}
+
+/* Aside */
+aside.float-github {
+  position: sticky;
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+  bottom: 10px;
+}
+
+aside.float-github div button {
+  transition: .5s;
+  width: 4rem;
+  height: 4rem;
+  color: #000000;
+  background: #F28705;
+  border: none;
+  border-radius: .5rem;
+}
+
+aside.float-github div button:hover {
+  cursor: pointer;
+  transition: .5s;
+  background: #037F8C;
+  transform: rotate(360deg);
+}
+
+aside.float-github div button img {
+  width: 80%;
 }
 
 /* Responsive */
