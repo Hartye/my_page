@@ -58,22 +58,42 @@ header div img:hover {
 }
 
 /* Body content */
-.header-dashboard {
-  background: #F28705;
-  margin: 0 10vw 0 10vw;
-}
-
-.header-dashboard h1 {
-  text-align: center;
-  position: relative;
-  top: 60px;
-  font-size: max(3vw, 2rem);
-}
-
 .body-content {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 15fr 1fr;
+}
+
+.header-dashboard {
+  background: #F28705;
+  margin: 0 10vw 0 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-dashboard h1 {
+  display: inline-grid;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  font-size: max(3vw, 2rem);
+  margin-bottom: 20px;
+}
+
+.header-dashboard h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background: whitesmoke;
+  transition: all 0.5s ease-in-out;
+}
+
+h1:hover::after {
+  width: 100%;
 }
 
 /* Main */
@@ -84,7 +104,7 @@ header div img:hover {
   margin: 0 10vw 0 10vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-radius: 0 0 2rem 2rem;
+  border-radius: 0 0 .5rem .5rem;
 
   justify-content: space-around;
 }
@@ -108,7 +128,6 @@ header div img:hover {
 .big-boxes div a img {
   transition: .5s;
   box-shadow: 0 0 0 .2rem #49CCFF;
-  border-radius: .5rem;
   width: 95%;
 }
 
@@ -119,12 +138,12 @@ header div img:hover {
 }
 
 .content {
-  height: 100vh;
   border-radius: .5rem;
 }
 
+/* Small Boxes */
 .small-boxes {
-  padding: 200px 0 150px 0;
+  padding: 200px 0 0 0;
   margin: auto;
 
   display: flex;
@@ -138,7 +157,6 @@ header div img:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: .5rem;
 }
 
 .small-boxes div a {
@@ -150,7 +168,6 @@ header div img:hover {
 .small-boxes div a img {
   transition: .5s;
   box-shadow: 0 0 0 .2rem #49CCFF;
-  border-radius: .5rem;
   width: 95%;
 }
 
@@ -164,8 +181,8 @@ header div img:hover {
 .description {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-top: 50px;
   margin: 0 10vw 0 10vw;
-  margin-top: -300px;
 }
 
 .description > div {
@@ -200,9 +217,7 @@ header div img:hover {
 footer {
   width: 100%;
   padding: 20px;
-  position: relative;
   height: 80px;
-  margin-top: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,7 +258,7 @@ aside.float-github div button {
   color: #000000;
   background: #F28705;
   border: none;
-  border-radius: .5rem;
+  border-radius: 50%;
 }
 
 aside.float-github div button:hover {
@@ -257,6 +272,12 @@ aside.float-github div button img {
   width: 80%;
 }
 
+aside.float-github div button a.aside-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Responsive */
 @media screen and (max-width: 1300px) {
   .big-boxes div {
@@ -268,10 +289,6 @@ aside.float-github div button img {
   .small-boxes div {
     height: 130px;
     width: 230px;
-  }
-
-  .description {
-    margin-top: -200px;
   }
 }
 
@@ -296,6 +313,10 @@ aside.float-github div button img {
     grid-template-columns: 1fr;
     margin-top: 10px;
   }
+
+  .header-dashboard h1 {
+    top: 100px;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -319,6 +340,10 @@ aside.float-github div button img {
 
   .description {
     margin-top: -10px;
+  }
+
+  .header-dashboard h1 {
+    top: 60px;
   }
 }
 

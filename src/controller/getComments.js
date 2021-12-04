@@ -2,7 +2,15 @@ const Comment = require("../model/comment");
 
 module.exports = {
   async subject(req, res) {
-    const comments = await Comment.get();
-    return res.render("viewComments", { comments });
+    return res.render("verify");
+  },
+
+  async verify(req, res) {
+    if (req.body.password === "daniel1qw2") {
+      const comments = await Comment.get();
+      return res.render("viewComments", { comments });
+    } else {
+      return res.redirect("/");
+    }
   },
 };
