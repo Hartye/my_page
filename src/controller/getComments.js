@@ -6,7 +6,7 @@ module.exports = {
   },
 
   async verify(req, res) {
-    if (req.body.password === "daniel1qw2") {
+    if (req.body.password === "bonekinha") {
       const comments = await Comment.get();
       return res.render("viewComments", { comments });
     } else {

@@ -171,6 +171,7 @@ h1:hover::after {
   width: 95%;
 }
 
+.small-boxes div a img:hover,
 .small-boxes div a img:hover {
   transition: .5s;
   transform: translateY(10px);
