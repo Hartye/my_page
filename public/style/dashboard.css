@@ -167,7 +167,6 @@ h1:hover::after {
 
 .small-boxes div a img {
   transition: .5s;
-  box-shadow: 0 0 0 .2rem #49CCFF;
   width: 95%;
 }
 
