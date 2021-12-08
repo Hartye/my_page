@@ -200,6 +200,9 @@ h1:hover::after {
 
 /* Thinking Svg */
 .thinking-svg {
+  height: 500px;
+  z-index: -1;
+  background: url("https://images.unsplash.com/photo-1637087383682-40f325297582?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=803&q=80") no-repeat center center fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,8 +211,10 @@ h1:hover::after {
 }
 
 .thinking-svg img {
-  z-index: -1;
+  padding: 1rem;
+  background: #F2C335;
   width: min(70vw, 600px);
+  border-radius: .5rem;
 }
 
 /* Description */

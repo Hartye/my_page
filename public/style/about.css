@@ -12,11 +12,15 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 9fr 1fr;
 }
 
 /* Main */
-Main h1 {
+main {
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+}
+
+main h1 {
   margin: 1rem 0;
   text-align: center;
 }
@@ -36,4 +40,37 @@ main .my-info p {
   text-align: center;
   margin: 1rem 0;
   font-size: 1.2rem;
+}
+
+main .about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .contact {
+  padding: 0 5rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+main .contact p {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  main .contact {
+    margin-top: 0;
+  }
+
+  main .my-info p,
+  main .contact p {
+    font-size: 1rem;
+  }
 }
