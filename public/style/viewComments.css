@@ -3,40 +3,36 @@ main div p {
   text-align: center;
 }
 
-.modal {
+.comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment > div {
+  width: 40vw;
+}
+
+.comment button {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #ddd;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+
   display: flex;
   justify-content: center;
   align-items: center;
-
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 1);
 }
 
-.modal-content {
-  width: 470px;
-  height: 100px;
-  background-color: #ddd;
-  padding: 20px;
-  border-radius: .5rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.comment button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background: rgb(255, 31, 31);
 }
 
-.modal-content form input {
-  margin: 10px;
-  height: 30px;
-  width: 250px;
-  font-size: 1.2rem;
-}
-
-.modal-content form button {
-  margin: 10px;
-  height: 30px;
-  width: 70px;
-  font-size: .8rem;
+.comment button img {
+  width: 30px;
 }

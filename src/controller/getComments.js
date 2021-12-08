@@ -13,4 +13,11 @@ module.exports = {
       return res.redirect("/");
     }
   },
+
+  async delete(req, res) {
+    const id = req.params.id;
+    await Comment.delete(id);
+    const comments = await Comment.get();
+    return res.render("viewComments", { comments });
+  },
 };

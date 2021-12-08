@@ -22,9 +22,14 @@
       <main>
         <h1>FeedBack</h1>
         <% comments.forEach(comment => { %>
-        <div>
-          <h2><%= comment.name %></h2>
-          <p><%= comment.content %></p>
+        <div class="comment">
+          <div>
+            <h2><%= comment.name %></h2>
+            <p><%= comment.content %></p>
+          </div>
+          <a href="/remove/<%= comment.id %>">
+            <button>&times;</button>
+          </a>
         </div>
         <br />
         <% }) %>

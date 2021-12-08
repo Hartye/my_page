@@ -27,4 +27,12 @@ module.exports = {
 
     await db.close();
   },
+
+  async delete(id) {
+    const db = await Database();
+
+    await db.run(`DELETE FROM comments WHERE id = ${id}`);
+
+    await db.close();
+  },
 };

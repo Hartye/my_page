@@ -9,5 +9,6 @@ routes.get("/contact", PagesController.contact);
 routes.post("/contact", PagesController.submit);
 routes.get("/comments", ViewComments.subject);
 routes.post("/comments", ViewComments.verify);
+routes.get("/remove/:id", ViewComments.delete);
 
 module.exports = routes;

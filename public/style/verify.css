@@ -1,0 +1,37 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.modal-content {
+  width: 470px;
+  height: 100px;
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: .5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content form input {
+  margin: 10px;
+  height: 30px;
+  width: 250px;
+  font-size: 1.2rem;
+}
+
+.modal-content form button {
+  margin: 10px;
+  height: 30px;
+  width: 70px;
+  font-size: .8rem;
+}
