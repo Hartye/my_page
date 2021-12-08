@@ -133,7 +133,7 @@ h1:hover::after {
 
 .big-boxes div a img:hover {
   transition: .5s;
-  transform: translateY(10px);
+  transform: scale(1.1);
   box-shadow: 0 0 0 .2rem #F2F2F2;
 }
 
@@ -155,8 +155,10 @@ h1:hover::after {
   width: 250px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease-in-out;
 }
 
 .small-boxes div a {
@@ -171,11 +173,43 @@ h1:hover::after {
   width: 95%;
 }
 
+.small-boxes div span {
+  z-index: 1;
+  width: calc(100% - 5px);
+  padding: .5rem;
+  background: #49CCFF;
+  font-size: 0rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.small-boxes div span p {
+  color: #000000;
+}
+
+.small-boxes>div:hover>span {
+  font-size: min(2vw, 1.1rem);
+  background: #F2F2F2;
+  margin-bottom: -200px;
+}
+
 .small-boxes div a img:hover,
 .small-boxes div a img:hover {
   transition: .5s;
-  transform: translateY(10px);
   box-shadow: 0 0 0 .2rem #F2F2F2;
+}
+
+/* Thinking Svg */
+.thinking-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 100px 0 100px 0;
+}
+
+.thinking-svg img {
+  z-index: -1;
+  width: min(70vw, 600px);
 }
 
 /* Description */
@@ -318,6 +352,12 @@ aside.float-github div button a.aside-icon {
   .header-dashboard h1 {
     top: 100px;
   }
+
+  .small-boxes div:hover {
+    transition: .5s;
+    margin-top: 30px;
+    padding-bottom: 100px;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -345,6 +385,11 @@ aside.float-github div button a.aside-icon {
 
   .header-dashboard h1 {
     top: 60px;
+  }
+
+  .small-boxes div:hover {
+    transition: .5s;
+    margin-top: 0px;
   }
 }
 
