@@ -79,6 +79,7 @@ header div img:hover {
   top: 60px;
   font-size: max(3vw, 2rem);
   margin-bottom: 20px;
+  cursor: default;
 }
 
 .header-dashboard h1::after {
@@ -134,7 +135,7 @@ h1:hover::after {
 .big-boxes div a img:hover {
   transition: .5s;
   transform: scale(1.1);
-  box-shadow: 0 0 0 .2rem #F2F2F2;
+  box-shadow: -.5rem .5rem 0 #49CCFF;
 }
 
 .content {
