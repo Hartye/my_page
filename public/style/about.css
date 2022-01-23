@@ -56,10 +56,6 @@ main .contact p {
 }
 
 @media screen and (max-width: 768px) {
-  main {
-    grid-template-columns: 1fr;
-  }
-
   main .contact {
     margin-top: 0;
   }
