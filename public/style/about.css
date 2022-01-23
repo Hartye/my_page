@@ -15,11 +15,6 @@ body {
 }
 
 /* Main */
-main {
-  display: grid;
-  grid-template-columns: 8fr 1fr;
-}
-
 main h1 {
   margin: 1rem 0;
   text-align: center;
