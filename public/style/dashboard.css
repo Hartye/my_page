@@ -290,6 +290,7 @@ aside.float-github {
   margin-right: 20px;
   bottom: 10px;
   width: 5rem;
+  z-index: 1;
 }
 
 aside.float-github div button {
